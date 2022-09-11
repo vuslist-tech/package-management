@@ -39,8 +39,7 @@ sudo chmod -R 775 /opt/sonatype-work
 
 #6 Open /opt/nexus/bin/nexus.rc file and  uncomment run_as_user parameter and set as nexus user.
 
-vi /opt/nexus/bin/nexus.rc
-run_as_user="nexus"
+echo  'run_as_user="nexus" ' > /opt/nexus/bin/nexus.rc
 
 #7 CONFIGURE NEXUS TO RUN AS A SERVICE 
 
@@ -51,6 +50,8 @@ sudo systemctl enable nexus
 sudo systemctl start nexus
 sudo systemctl status nexus
 echo "end of nexus installation"
+
+
 
 =====================
 access nexus on the browser
