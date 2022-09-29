@@ -25,10 +25,10 @@ sudo yum install wget unzip -y
 ```
 ### Install Tomcat version 10.0.23
 ``` sh
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.23/bin/apache-tomcat-10.0.23.tar.gz
-sudo tar -xvf apache-tomcat-10.0.23.tar.gz
-sudo rm apache-tomcat-10.0.23.tar.gz
-sudo mv apache-tomcat-10.0.23 tomcat9
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v0.0.65/bin/apache-tomcat-9.0.65.tar.gz
+sudo tar -xvf apache-tomcat-9.0.65.tar.gz
+sudo rm apache-tomcat-9.0.65.tar.gz
+sudo mv apache-tomcat-9.0.65 tomcat9
 sudo chmod 777 -R /opt/tomcat9
 sudo chown ec2-user -R /opt/tomcat9
 sh /opt/tomcat9/bin/startup.sh
